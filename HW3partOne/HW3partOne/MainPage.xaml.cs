@@ -15,9 +15,19 @@ namespace HW3partOne
             NavigationPage.SetHasNavigationBar(this, false);
 		}
 
-        void Plan1Clicked(object sender, EventArgs e)
+        async void Plan1Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Plan1());
+            string response = await DisplayActionSheet("Plan 1 Variation", "Cancel", null,"Standard", "with Bed 4 Option");
+
+            if(response.Equals("Standard", StringComparison.OrdinalIgnoreCase))
+            {
+                await Navigation.PushAsync(new Plan1("Standard Plan 1"));
+            }
+
+            if (response.Equals("with Bed 4 Option", StringComparison.OrdinalIgnoreCase))
+            {
+                await Navigation.PushAsync(new Plan1wBed4Opt("Plan 1 with Bed 4 Option"));
+            }
         }
 
         void Plan2Clicked(object sender, EventArgs e)

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HW3partOne.Plan1"
-             Title="House Plan 1">
+             x:Class="HW3partOne.Plan1wBed4Opt"
+             Title="House Plan 1 w Bed4 Option">
     <ContentPage.Content>
         <StackLayout
             VerticalOptions="CenterAndExpand" 
@@ -11,9 +11,9 @@
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 TextColor="Black"
-                x:Name="planType"/>
+                x:Name="Plan1Bed4Opt"/>
             <Image
-                Source="Plan1.png"/>
+                Source="P1BED4.png"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

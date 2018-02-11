@@ -9,13 +9,14 @@ using Xamarin.Forms.Xaml;
 
 namespace HW3partOne
 {
-	public partial class Plan1 : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Plan1wBed4Opt : ContentPage
 	{
-		public Plan1 (string houseOptExist)
+		public Plan1wBed4Opt (string houseOptExist)
 		{
 			InitializeComponent ();
+            Plan1Bed4Opt.Text = houseOptExist;
 
-            planType.Text = houseOptExist;
-		}
+        }
 	}
 }
